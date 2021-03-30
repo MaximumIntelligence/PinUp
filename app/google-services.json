@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958142187681",
+    "project_id": "pinup-c4ebe",
+    "storage_bucket": "pinup-c4ebe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958142187681:android:0ac17ae648fd66b4b1c8e0",
+        "android_client_info": {
+          "package_name": "com.maximumintelligence.pinup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958142187681-qttae7gajkur5b6o0jq4lormebh1q680.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhLHVqgQqvktCvDtNyOHOvJs-mgXxG1PI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958142187681-qttae7gajkur5b6o0jq4lormebh1q680.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

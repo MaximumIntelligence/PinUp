@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PinUp</string>
+    <string name="msg_token_fmt">msg_token_fmt</string>
+    <string name="orderString">Замовити</string>
+    <string name="name">Ім\'я</string>
+    <string name="btnOrder">Замовити гру</string>
+    <string name="someBraveText">Лише один клік і ти у грі</string>
+    <string name="phoneNumber">+380(___)_______</string>
+    <string name="email">Email</string>
+</resources>

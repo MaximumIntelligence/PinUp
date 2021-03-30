@@ -1,0 +1,166 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "ac2d812c8b2b867003f6fb40863631fc",
+    "entities": [
+      {
+        "tableName": "UserData",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`userID` INTEGER NOT NULL, `userName` TEXT, `userPhone` TEXT, `userEmail` TEXT, `mDelegate` TEXT, `mResources` TEXT, `mFragments` TEXT, `mFragmentLifecycleRegistry` TEXT, `mCreated` INTEGER NOT NULL, `mResumed` INTEGER NOT NULL, `mStopped` INTEGER NOT NULL, `mRequestedPermissionsFromFragment` INTEGER NOT NULL, `mStartedIntentSenderFromFragment` INTEGER NOT NULL, `mStartedActivityFromFragment` INTEGER NOT NULL, `mNextCandidateRequestIndex` INTEGER NOT NULL, `mPendingFragmentActivityResults` TEXT, `mLifecycleRegistry` TEXT, `mSavedStateRegistryController` TEXT, `mViewModelStore` TEXT, `mOnBackPressedDispatcher` TEXT, `mContentLayoutId` INTEGER NOT NULL, `mExtraDataMap` TEXT, `mLifecycleRegistry` TEXT, PRIMARY KEY(`userID`))",
+        "fields": [
+          {
+            "fieldPath": "userID",
+            "columnName": "userID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userName",
+            "columnName": "userName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userPhone",
+            "columnName": "userPhone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userEmail",
+            "columnName": "userEmail",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mDelegate",
+            "columnName": "mDelegate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mResources",
+            "columnName": "mResources",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mFragments",
+            "columnName": "mFragments",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mFragmentLifecycleRegistry",
+            "columnName": "mFragmentLifecycleRegistry",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mCreated",
+            "columnName": "mCreated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mResumed",
+            "columnName": "mResumed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mStopped",
+            "columnName": "mStopped",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mRequestedPermissionsFromFragment",
+            "columnName": "mRequestedPermissionsFromFragment",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mStartedIntentSenderFromFragment",
+            "columnName": "mStartedIntentSenderFromFragment",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mStartedActivityFromFragment",
+            "columnName": "mStartedActivityFromFragment",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mNextCandidateRequestIndex",
+            "columnName": "mNextCandidateRequestIndex",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mPendingFragmentActivityResults",
+            "columnName": "mPendingFragmentActivityResults",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mLifecycleRegistry",
+            "columnName": "mLifecycleRegistry",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mSavedStateRegistryController",
+            "columnName": "mSavedStateRegistryController",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mViewModelStore",
+            "columnName": "mViewModelStore",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mOnBackPressedDispatcher",
+            "columnName": "mOnBackPressedDispatcher",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mContentLayoutId",
+            "columnName": "mContentLayoutId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mExtraDataMap",
+            "columnName": "mExtraDataMap",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mLifecycleRegistry",
+            "columnName": "mLifecycleRegistry",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "userID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ac2d812c8b2b867003f6fb40863631fc')"
+    ]
+  }
+}
