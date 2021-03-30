@@ -1,19 +1,16 @@
 package com.maximumintelligence.pinup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import androidx.room.TypeConverter;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
-import java.util.Arrays;
-import java.util.Collection;
+
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
+
 
 public class Converters {
 

@@ -1,6 +1,5 @@
 package com.maximumintelligence.pinup;
 
-import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 

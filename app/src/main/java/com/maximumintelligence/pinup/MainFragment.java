@@ -40,26 +40,18 @@ public class MainFragment extends Fragment {
         EditText userEmail = view.findViewById(R.id.userEmail);
         Button orderButton = view.findViewById(R.id.orderButton);
 
-        View.OnClickListener ocl = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        View.OnClickListener ocl = v -> {
 
-                String name = String.valueOf(userName.getText());
-                String phone = String.valueOf(userPhone.getText());
-                String email = String.valueOf(userEmail.getText());
+            String name = String.valueOf(userName.getText());
+            String phone = String.valueOf(userPhone.getText());
+            String email = String.valueOf(userEmail.getText());
 
 
-                dataBaseThread.setter(name, phone, email);
-                /*userData.setUserName(name);
-                userData.setUserPhone(phone);
-                userData.setUserEmail(email);*/
+            dataBaseThread.setter(name, phone, email);
+            dataBaseThread.start();
 
-                dataBaseThread.start();
-
-                getParentFragmentManager().beginTransaction().setReorderingAllowed(true)
-                        .replace(R.id.main_fragment, WebViewFragment.class, null).commit();
-
-            }
+            getParentFragmentManager().beginTransaction().setReorderingAllowed(true)
+                    .replace(R.id.main_fragment, WebViewFragment.class, null).commit();
 
         };
         orderButton.setOnClickListener(ocl);
